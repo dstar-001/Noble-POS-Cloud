@@ -1,0 +1,34 @@
+[project]
+name = "noble-pos-cloud"
+version = "1.0.0"
+description = "Cloud point-of-sale for Tanzanian shops with shared inventory, checkout, and sales reporting."
+requires-python = ">=3.12"
+authors = [
+    { name = "Daniel Octavian", email = "danieloctavian222@gmail.com" }
+]
+dependencies = [
+    "flet>=1.0.3",
+    "httpx2",
+    "httpx2-jsfetch"
+]
+
+[dependency-groups]
+dev = [
+    "flet-cli",
+    "flet-desktop",
+    "flet-web"
+]
+
+[tool.flet.metadata]
+title = "Noble POS Cloud"
+
+[tool.flet]
+org = "dev.flet"
+company = "Daniel Octavian"
+copyright = "Copyright (C) 2026 by Daniel Octavian"
+
+[tool.flet.app]
+path = "src"
+
+[tool.flet.web]
+dependencies = ["httpx2", "httpx2-jsfetch"]
